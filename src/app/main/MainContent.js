@@ -3,11 +3,15 @@
 import React, {useState, useEffect, useMemo} from 'react'
 import WalletAddress from './contract-address/ContractAddress'
 import Socials from './socials/Socials'
+import Telegram from './telegram/Telegram'
+import X from './x/X'
 import ButtonDescription from './ButtonDescription'
 
 import css from './css.module.css'
 
 const MainContent = ({
+    aAction,
+    bAction,
     setStartAction,
     setAAction,
     setBAction,
@@ -22,23 +26,25 @@ const MainContent = ({
                 title: 'contract address',
                 activeButtons: {
                     A: 'copy address',
-                    B: 'copy address'
+                    // B: 'copy address'
                 },
                 ele: WalletAddress
             },
             {
                 title: 'telegram',
                 activeButtons: {
-                    A: 'go to telegram'
+                    A: 'go to telegram',
+                    B: 'copy link'
                 },
-                ele: Socials
+                ele: Telegram
             },
             {
                 title: 'x',
                 activeButtons: {
-                    A: 'go to  x'
+                    A: 'go to  x',
+                    B: 'copy link'
                 },
-                ele: Socials
+                ele: X
             }
         ]
     }, [])
@@ -100,13 +106,16 @@ const MainContent = ({
                     return React.createElement(c.ele, {
                         key: c.title,
                         index,
-                        position
+                        position,
+                        setAAction: setAAction,
+                        setBAction: setBAction,
+                        activeContent
                     })
                 })
                 }
             </div>
             <div className={css.activeButtonsContainer}>   
-                {activeButtonsDescription.map(b => <ButtonDescription key={b.buttonName} buttonName={b.buttonName} buttonDescription={b.buttonDescription} />)}
+                {activeButtonsDescription.map((b, index) => <ButtonDescription onClick={index === 0 ? () => aAction?.() : () => bAction?.()} key={b.buttonName} buttonName={b.buttonName} buttonDescription={b.buttonDescription} />)}
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ const ComingSoon = () => {
 
     const [timerVal, setTimerVal] = useState('00:00:00')
 
-    const targetDate = new Date(Date.UTC(2024, 4, 10, 24, 0, 0))
+    const targetDate = new Date(Date.UTC(2024, 4, 10, 25, 0, 0))
 
     useEffect(() => {
         const timer = setInterval(() => {

@@ -28,6 +28,7 @@
     height: 100%;
 
     transition: .5s;
+    min-height: 0;
 }
 
 .contentReel>*[data-position="active"]{
@@ -59,17 +60,18 @@
     align-items: center;
     width: 100%;
     height: auto;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .buttonDescription> :nth-child(1){
     display: grid;
     place-items: center;
-    width: 25px;
+    width: 20px;
     aspect-ratio: 1;
     border-radius: 1000px;
     flex-shrink: 0;
     background: white;
     color: black;
-    margin-right: 10px;
+    margin-right: 5px;
 }

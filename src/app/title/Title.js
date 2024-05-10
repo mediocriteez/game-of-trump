@@ -19,10 +19,12 @@ const Title = ({setStartAction, setCurrentContent}) => {
     }, [])
     
     return(
-        <div>
+        <div className={css.titleContainer}>
+            <img src={'/game-of-trump-text.png'} />
             <div className={css.trumpWalk}>
                 <img src={'/trump-walk.gif'} data-direction={trumpDirection} onClick={() => setTrumpDirection('out')}/>
             </div>
+            <p className={css.pressStart}>press start</p>
         </div>
     )
 }

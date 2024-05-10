@@ -21,6 +21,8 @@ export default function Home() {
   return (
     <>
       <ContentContainer 
+        aAction={aAction}
+        bAction={bAction}
         setStartAction={setStartAction}
         setAAction={setAAction}
         setBAction={setBAction}

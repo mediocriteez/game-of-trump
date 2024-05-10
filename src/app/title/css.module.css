@@ -1,3 +1,18 @@
+.titleContainer{
+    display:grid;
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) min-content;
+    padding: 5px;
+}
+
+.titleContainer>img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
 .trumpWalk{
     display: grid;
     place-items: center;
@@ -21,4 +36,8 @@
 .trumpWalk>img[data-direction="out"]{
     transform: translateX(100%);
     left: 100%
+}
+
+.pressStart{
+    text-align: center;
 }
