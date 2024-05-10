@@ -1,0 +1,32 @@
+.sceneContainer{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.titleCard{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: black;
+    transition: 1s;
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.titleCard[data-fade-out=true]{
+    opacity: 0;
+}
+
+.sceneVideo{
+    width: calc(100% - 2px);
+}
+
+.buttonDescription{
+    position: absolute;
+    inset: 0;
+    top: auto;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,75 @@
+.mainContentContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentTitle{
+    padding: 5px;
+}
+
+.contentReel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.contentReel>*{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: .5s;
+}
+
+.contentReel>*[data-position="active"]{
+    top: 0;
+}
+
+.contentReel>*[data-position="above"]{
+    top: -100%;
+}
+
+.contentReel>*[data-position="below"]{
+    top: 100%;
+}
+
+.mainContentContainer>*{
+    width: 100%;
+    height: 100%;
+}
+
+.activeButtonsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.buttonDescription{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.25rem;
+}
+
+.buttonDescription> :nth-child(1){
+    display: grid;
+    place-items: center;
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 1000px;
+    flex-shrink: 0;
+    background: white;
+    color: black;
+    margin-right: 10px;
+}
