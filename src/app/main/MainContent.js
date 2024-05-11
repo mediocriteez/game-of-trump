@@ -6,6 +6,7 @@ import Socials from './socials/Socials'
 import Telegram from './telegram/Telegram'
 import X from './x/X'
 import ButtonDescription from './ButtonDescription'
+import Lambo from './lambo/Lambo'
 
 import css from './css.module.css'
 
@@ -23,6 +24,13 @@ const MainContent = ({
     const content = useMemo(() => {
         return [
             {
+                title: 'lambo',
+                activeButtons: {
+                    A: 'launch game'
+                },
+                ele: Lambo
+            },
+            {
                 title: 'contract address',
                 activeButtons: {
                     A: 'copy address',
@@ -39,7 +47,7 @@ const MainContent = ({
                 ele: Telegram
             },
             {
-                title: 'x',
+                title: 'x.com',
                 activeButtons: {
                     A: 'go to  x',
                     B: 'copy link'
@@ -92,7 +100,7 @@ const MainContent = ({
     return(
         <div className={css.mainContentContainer}>
             <h2 className={css.contentTitle}>{contentTitle}</h2>
-            <div><img src='/pixel-arrow.svg' style={{display: 'block', margin: '0 auto', height: '100%', transform: 'rotate(180deg)'}}/></div>
+            <div>{activeContent != 0 && <img src='/pixel-arrow.svg' className={css.indicatorArrow} onClick={upAction} style={{display: 'block', margin: '0 auto', height: '90%', transform: 'rotate(180deg)', cursor: 'pointer'}}/>}</div>
             <div className={css.contentReel}>
                 {
                 content.map((c, index) => {
@@ -115,6 +123,7 @@ const MainContent = ({
                 })
                 }
             </div>
+            <div>{activeContent != content.length -1 && <img className={css.indicatorArrow} onClick={downAction} src='/pixel-arrow.svg' style={{display: 'block', margin: '0 auto', height: '90%', cursor: 'pointer'}}/>}</div>
             <div className={css.activeButtonsContainer}>   
                 {activeButtonsDescription.map((b, index) => <ButtonDescription onClick={(index === 0 ? () => aAction?.() : () => bAction?.())} key={b.buttonName} buttonName={b.buttonName} buttonDescription={b.buttonDescription} />)}
             </div>

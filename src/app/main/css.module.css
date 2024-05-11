@@ -1,7 +1,7 @@
 .mainContentContainer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 10% 1fr min-content;
+    grid-template-rows: min-content 10% 1fr 10% min-content;
     padding: 5px;
     width: 100%;
     height: 100%;
@@ -74,4 +74,13 @@
     background: white;
     color: black;
     margin-right: 5px;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }  /* Start and end fully visible */
+    50% { opacity: 0; }      /* Halfway becomes fully transparent */
+}
+
+.indicatorArrow{
+    /* animation: fadeInOut 2s infinite; */
 }

@@ -60,7 +60,7 @@ const Scene = ({setAAction, setCurrentContent}) => {
                 <span>Washington D.C. , 2019</span>
             </div>
             <video ref={sceneVideoRef} className={css.sceneVideo} src={'/scene.mp4'}></video>
-            <div className={css.buttonDescription}>A: skip</div>
+            <div onClick={aAction}className={css.buttonDescription} style={{fontSize: '1.5rem', cursor: 'pointer'}}><span style={{display:'inline-grid', placeItems: 'center', width: '30px', aspectRatio: '1/1', borderRadius: '50%', background: 'white', color: 'black', marginRight: '5px'}}>A</span> skip</div>
         </div>
     )
 }

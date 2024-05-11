@@ -71,15 +71,16 @@ body {
 }
 
 body {
-  /* background: orange; */
+  background: orange;
   border-radius: min(7vw, 30px);
+  box-shadow: inset 5px -5px 0 0 #ff8c00;
 }
 
 main{
-  /* display: grid;
+  display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 40% 1fr; */
+  grid-template-rows: 40% 1fr;
 
   padding: 5vw;
   width: 100%;
