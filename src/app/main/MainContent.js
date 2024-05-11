@@ -5,6 +5,7 @@ import WalletAddress from './contract-address/ContractAddress'
 import Socials from './socials/Socials'
 import Telegram from './telegram/Telegram'
 import X from './x/X'
+import DEX from './dex/DEX'
 import ButtonDescription from './ButtonDescription'
 import Lambo from './lambo/Lambo'
 import Duck from './duck/Duck'
@@ -45,6 +46,14 @@ const MainContent = ({
                     // B: 'copy address'
                 },
                 ele: WalletAddress
+            },
+            {
+                title: 'dextools',
+                activeButtons: {
+                    A: 'go to dextools',
+                    B: 'copy url'
+                },
+                ele: DEX
             },
             {
                 title: 'telegram',
