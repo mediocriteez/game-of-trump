@@ -60,7 +60,9 @@ const ComingSoon = () => {
                 background: 'black',
                 maxWidth: '500px',
                 color: 'white',
-                margin: '0 auto'
+                margin: '0 auto',
+                position: 'fixed',
+                inset: 0,
             }}
         >
             <img style={imgStyle} src="/game-of-trump-text.png"/>

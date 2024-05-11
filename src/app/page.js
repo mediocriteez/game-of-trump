@@ -6,7 +6,7 @@ import ButtonsContainer from './ButtonsContainer'
 import ComingSoon from './coming-soon.js/ComingSoon'
 export default function Home() {
 
-  // return(<ComingSoon />)
+  return(<ComingSoon />)
 
   const [deviceType, setDeviceType] = useState('mobile')
 
