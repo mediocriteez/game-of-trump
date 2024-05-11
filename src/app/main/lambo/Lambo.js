@@ -2,7 +2,7 @@
 
 import {useEffect} from 'react'
 
-const X = ({setAAction, setBAction, position, index, activeContent}) => {
+const Lambo = ({setAAction, setBAction, position, index, activeContent}) => {
 
     const aAction = () => {
         window.open('/game/lambo')
@@ -21,4 +21,4 @@ const X = ({setAAction, setBAction, position, index, activeContent}) => {
     )
 }
 
-export default X
+export default Lambo
