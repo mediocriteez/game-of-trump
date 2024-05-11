@@ -257,10 +257,10 @@ a {
 
 .social_text>span{
   width: 100%;
-  word-wrap: break-word;
-  /* white-space: nowrap;
+  /* word-wrap: break-word; */
+  white-space: nowrap;
   overflow: hidden;   
-  text-overflow: ellipsis; */
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 800px){
