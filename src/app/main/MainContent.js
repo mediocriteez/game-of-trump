@@ -6,6 +6,7 @@ import Socials from './socials/Socials'
 import Telegram from './telegram/Telegram'
 import X from './x/X'
 import DEX from './dex/DEX'
+import DEXScreener from './dex-screener/DEXScreener'
 import ButtonDescription from './ButtonDescription'
 import Lambo from './lambo/Lambo'
 import Duck from './duck/Duck'
@@ -48,12 +49,20 @@ const MainContent = ({
                 ele: WalletAddress
             },
             {
-                title: 'dextools',
+                title: 'dex tools',
                 activeButtons: {
                     A: 'go to dextools',
                     B: 'copy url'
                 },
                 ele: DEX
+            },
+            {
+                title: 'dex screener',
+                activeButtons: {
+                    A: 'go to screener',
+                    B: 'copy url'
+                },
+                ele: DEXScreener
             },
             {
                 title: 'telegram',
