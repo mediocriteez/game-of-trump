@@ -11,13 +11,13 @@ const Lambo = () => {
         const enterFullscreen =() => {
             const elem = iframeRef.current; // This could also be any other element you wish to fullscreen.
             
-            if (elem.requestFullscreen) {
+            if (elem?.requestFullscreen) {
                 elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
+            } else if (elem?.mozRequestFullScreen) { /* Firefox */
                 elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            } else if (elem?.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
                 elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            } else if (elem?.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
             }
         }
