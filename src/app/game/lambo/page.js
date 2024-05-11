@@ -24,7 +24,9 @@ const Lambo = () => {
 
     return(
         <>
-            <button style={{background:'black', color: 'white', display: buttonShow ? 'block' : 'none', position: 'fixed', zIndex: 2, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '2rem', padding: '7px 12px', borderRadius: '1000px', fontFamily:'Arcade Classic'}} onClick={enterFullscreen}>Enter Full Screen</button>
+            <div onClick={enterFullscreen} style={{placeItems: 'center', background:'black', color: 'white', display: buttonShow ? 'grid' : 'none', position: 'fixed', zIndex: 2, inset: 0, fontSize: '2rem', padding: '7px 12px', fontFamily:'Arcade Classic', border: 'none', outline: 'none', textAlign: 'center'}}>
+                <div>Click / Tap<br /> to Start</div>
+            </div>
             <iframe ref={iframeRef} src={'https://663edfd8e261e58d2476a8a3--glistening-tartufo-5af5f5.netlify.app/'} style={{position: 'fixed', zIndex: 1, width:'100vw', height: '100vh'}}></iframe>
         </>
     )
