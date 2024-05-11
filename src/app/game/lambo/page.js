@@ -20,6 +20,8 @@ const Lambo = () => {
             } else if (elem.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
             }
+
+            setButtonShow(false)
         }
 
     return(

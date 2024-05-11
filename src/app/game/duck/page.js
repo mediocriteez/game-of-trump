@@ -8,7 +8,7 @@ const Lambo = () => {
 
         const [buttonShow, setButtonShow] = useState(true)
   
-        const enterFullscreen =() => {
+        const enterFullscreen = () => {
             const elem = iframeRef.current; // This could also be any other element you wish to fullscreen.
             
             if (elem?.requestFullscreen) {
@@ -20,6 +20,8 @@ const Lambo = () => {
             } else if (elem?.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
             }
+
+            setButtonShow(false)
         }
 
     return(
