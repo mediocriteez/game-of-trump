@@ -7,6 +7,7 @@ import Telegram from './telegram/Telegram'
 import X from './x/X'
 import ButtonDescription from './ButtonDescription'
 import Lambo from './lambo/Lambo'
+import Duck from './duck/Duck'
 
 import css from './css.module.css'
 
@@ -24,11 +25,18 @@ const MainContent = ({
     const content = useMemo(() => {
         return [
             {
-                title: 'lambo',
+                title: 'lambo trump',
                 activeButtons: {
                     A: 'launch game'
                 },
                 ele: Lambo
+            },
+            {
+                title: 'trump jump',
+                activeButtons: {
+                    A: 'launch game'
+                },
+                ele: Duck
             },
             {
                 title: 'contract address',

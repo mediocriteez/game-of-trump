@@ -2,10 +2,10 @@
 
 import {useEffect} from 'react'
 
-const Lambo = ({setAAction, setBAction, position, index, activeContent}) => {
+const Duck = ({setAAction, setBAction, position, index, activeContent}) => {
 
     const aAction = () => {
-        window.open('/game/lambo')
+        window.open('/game/duck')
     }
 
     useEffect(() => {
@@ -15,10 +15,10 @@ const Lambo = ({setAAction, setBAction, position, index, activeContent}) => {
 
     return(
         <div className='social_container' data-position={position}>
-            <img className='social_icon' src={'/lambo-trump-cover.png'} />
-            <p className="social_text">Lambo Trump</p>
+            <img className='social_icon' src={'/duck-trump-cover.png'} />
+            <p className="social_text">Trump Jump</p>
         </div>
     )
 }
 
-export default Lambo
+export default Duck
