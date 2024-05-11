@@ -7,10 +7,10 @@ const ButtonsContainer = ({startAction, upAction, rightAction, downAction, leftA
                 <button onClick={() => startAction?.()}>START</button> 
             </div>
             <div id="d_pad">
-                <button onClick={() => upAction?.()}>U</button>
-                <button onClick={() => leftAction?.()}>L</button>
-                <button onClick={() => rightAction?.()}>R</button>
-                <button onClick={() => downAction?.()}>D</button>
+                <button onClick={() => upAction?.()}><img style={{transform: 'rotate(180deg)'}} src={'/pixel-arrow.svg'}/></button>
+                <button onClick={() => leftAction?.()}><img style={{transform: 'rotate(90deg)'}} src={'/pixel-arrow.svg'}/></button>
+                <button onClick={() => rightAction?.()}><img style={{transform: 'rotate(-90deg)'}} src={'/pixel-arrow.svg'}/></button>
+                <button onClick={() => downAction?.()}><img src={'/pixel-arrow.svg'}/></button>
             </div>
             <div id="action_buttons">
                 <button onClick={() => aAction?.()}>A</button>

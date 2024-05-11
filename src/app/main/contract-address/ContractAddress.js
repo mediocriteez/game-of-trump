@@ -20,7 +20,7 @@ const ContractAddress = ({setAAction, setBAction, position, index, activeContent
     return(
         <div data-position={position} className='social_container'>
             <img className="social_icon" src={'/solana-logo.svg'} />
-            <p className="social_text"><span>{process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}</span></p>
+            <p className="social_text" style={{textAlign: 'center'}}><span>{process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}</span></p>
         </div>
     )
 }

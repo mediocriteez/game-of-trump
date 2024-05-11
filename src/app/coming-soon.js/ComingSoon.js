@@ -65,7 +65,8 @@ const ComingSoon = () => {
         >
             <img style={imgStyle} src="/game-of-trump-text.png"/>
             <img style={{...imgStyle, maxHeight: '300px', objectFit: 'contain'}} src="/trump-walk.gif"/>
-            <span style={textStyle}>Coming Soon: {timerVal}</span>
+            {/* <span style={textStyle}>Coming Soon: {timerVal}</span> */}
+            <span style={textStyle}>Deploying! Bare with us!</span>
             <p style={textStyle}>
                 Contract Address:<br />
                 <span style={{width: '100%', wordWrap:'break-word'}}>

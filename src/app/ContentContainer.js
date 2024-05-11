@@ -8,6 +8,8 @@ import MainContent from './main/MainContent'
 import { Cuprum } from 'next/font/google'
 
 const ContentContainer = ({
+    aAction,
+    bAction,
     setStartAction,
     setAAction,
     setBAction,
@@ -22,7 +24,9 @@ const ContentContainer = ({
             {currentContent === 'title' && <Title setStartAction={setStartAction} setCurrentContent={setCurrentContent}/>}
             {currentContent === 'scene' && <Scene setAAction={setAAction} setCurrentContent={setCurrentContent}/>}
             {currentContent === 'main' && 
-                <MainContent 
+                <MainContent
+                    aAction={aAction}
+                    bAction={bAction}
                     setStartAction={setStartAction}
                     setAAction={setAAction}
                     setBAction={setBAction}

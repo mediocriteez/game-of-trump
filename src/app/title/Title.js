@@ -24,7 +24,7 @@ const Title = ({setStartAction, setCurrentContent}) => {
             <div className={css.trumpWalk}>
                 <img src={'/trump-walk.gif'} data-direction={trumpDirection} onClick={() => setTrumpDirection('out')}/>
             </div>
-            <p className={css.pressStart}>press start</p>
+            <p className={css.pressStart} style={{fontSize: '1.5rem', cursor: 'pointer'}} onClick={startAction}>press start</p>
         </div>
     )
 }

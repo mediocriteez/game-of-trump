@@ -92,6 +92,7 @@ const MainContent = ({
     return(
         <div className={css.mainContentContainer}>
             <h2 className={css.contentTitle}>{contentTitle}</h2>
+            <div><img src='/pixel-arrow.svg' style={{display: 'block', margin: '0 auto', height: '100%', transform: 'rotate(180deg)'}}/></div>
             <div className={css.contentReel}>
                 {
                 content.map((c, index) => {
@@ -115,7 +116,7 @@ const MainContent = ({
                 }
             </div>
             <div className={css.activeButtonsContainer}>   
-                {activeButtonsDescription.map((b, index) => <ButtonDescription onClick={index === 0 ? () => aAction?.() : () => bAction?.()} key={b.buttonName} buttonName={b.buttonName} buttonDescription={b.buttonDescription} />)}
+                {activeButtonsDescription.map((b, index) => <ButtonDescription onClick={(index === 0 ? () => aAction?.() : () => bAction?.())} key={b.buttonName} buttonName={b.buttonName} buttonDescription={b.buttonDescription} />)}
             </div>
         </div>
     )

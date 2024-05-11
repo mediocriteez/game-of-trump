@@ -2,7 +2,7 @@
     display:grid;
     min-height: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr) min-content;
+    grid-template-rows: 50% 1fr min-content;
     padding: 5px;
 }
 
