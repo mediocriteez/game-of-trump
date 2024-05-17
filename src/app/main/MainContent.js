@@ -10,6 +10,7 @@ import DEXScreener from './dex-screener/DEXScreener'
 import ButtonDescription from './ButtonDescription'
 import Lambo from './lambo/Lambo'
 import Duck from './duck/Duck'
+import Jetpack from './jetpack/Jetpack'
 
 import css from './css.module.css'
 
@@ -39,6 +40,13 @@ const MainContent = ({
                     A: 'launch game'
                 },
                 ele: Duck
+            },
+            {
+                title: 'jetpack trump',
+                activeButtons: {
+                    A: 'launch game'
+                },
+                ele: Jetpack
             },
             {
                 title: 'contract address',
