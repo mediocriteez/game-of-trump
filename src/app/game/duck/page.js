@@ -2,7 +2,11 @@
 
 import { useState, useEffect, useRef } from "react"
 
-const Lambo = () => {
+const Duck = () => {
+
+    return(
+        <Player gameURL={'https://incomparable-frangollo-0190a3.netlify.app'} />
+    )
 
     const iframeRef = useRef()
 
@@ -29,9 +33,9 @@ const Lambo = () => {
             <div onClick={enterFullscreen} style={{placeItems: 'center', background:'black', color: 'white', display: buttonShow ? 'grid' : 'none', position: 'fixed', zIndex: 2, inset: 0, fontSize: '2rem', padding: '7px 12px', fontFamily:'Arcade Classic', border: 'none', outline: 'none', textAlign: 'center'}}>
                 <div>Click / Tap<br /> to Start</div>
             </div>
-            <iframe ref={iframeRef} src={'https://incomparable-frangollo-0190a3.netlify.app'} style={{position: 'fixed', zIndex: 1, width:'100vw', height: '100vh'}}></iframe>
+            <iframe ref={iframeRef} src={'https://incomparable-frangollo-0190a3.netlify.app'} style={{position: 'fixed', zIndex: 1, inset: 0, width: '100vw', height: '100vh'}}></iframe>
         </>
     )
 }
 
-export default Lambo
+export default Duck
