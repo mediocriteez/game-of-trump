@@ -1,4 +1,8 @@
 export const metadata = {
+    appleWebApp: {
+        capable: 'yes',
+        statusBarStyle: 'black-translucent'
+    },
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent"
 }
