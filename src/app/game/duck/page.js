@@ -1,5 +1,6 @@
 "use client"
 
+import Player from '../Player'
 import { useState, useEffect, useRef } from "react"
 
 const Duck = () => {
