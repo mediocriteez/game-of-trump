@@ -11,6 +11,7 @@ import ButtonDescription from './ButtonDescription'
 import Lambo from './lambo/Lambo'
 import Duck from './duck/Duck'
 import Jetpack from './jetpack/Jetpack'
+import Walking from './walking/Walking'
 
 import css from './css.module.css'
 
@@ -47,6 +48,13 @@ const MainContent = ({
                     A: 'launch game'
                 },
                 ele: Jetpack
+            },
+            {
+                title: 'the walking trump',
+                activeButtons: {
+                    A: 'launch game'
+                },
+                ele: Walking
             },
             {
                 title: 'contract address',
