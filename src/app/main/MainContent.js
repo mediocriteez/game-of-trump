@@ -12,6 +12,7 @@ import Lambo from './lambo/Lambo'
 import Duck from './duck/Duck'
 import Jetpack from './jetpack/Jetpack'
 import Walking from './walking/Walking'
+import Ninja from './ninja/Ninja'
 
 import css from './css.module.css'
 
@@ -55,6 +56,13 @@ const MainContent = ({
                     A: 'launch game'
                 },
                 ele: Walking
+            },
+            {
+                title: 'ninja trump',
+                activeButtons: {
+                    A: 'launch game'
+                },
+                ele: Ninja
             },
             {
                 title: 'contract address',
